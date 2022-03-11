@@ -1,5 +1,4 @@
 | [Home](..) | [Tech Talk Notes](apcsa/ttn) | [Test prep plans](apcsa/tpp) | [Data struture work](apcsa/dsw) |
-| ----------------| --------------- | ------------------ |
 
 # About
 ### TKperson was here...

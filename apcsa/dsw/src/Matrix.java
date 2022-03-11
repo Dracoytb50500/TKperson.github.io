@@ -27,7 +27,7 @@ public class Matrix {
         String output = "";
         for(int i = 0; i < matrix.length; i++) {
             for(int j = 0; j < matrix[i].length; j++) 
-                output += matrix[i][j] < 0 ? " ": matrix[i][j] + " ";
+                output += matrix[i][j] < 0 ? "  ": matrix[i][j] + " ";
             output += "\n";
         }
         return output;
