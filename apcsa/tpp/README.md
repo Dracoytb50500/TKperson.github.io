@@ -1,4 +1,4 @@
-| [Home](..) | [Tech Talk Notes](ttn) | [Test prep plans](tpp) | [Data struture work](dsw) |
+| [Home](..) | [Tech Talk Notes](../ttn) | [Test prep plans](.) | [Data struture work](../dsw) |
 
 
 # Test prep plans

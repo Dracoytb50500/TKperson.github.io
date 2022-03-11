@@ -1,4 +1,4 @@
-| [Home](..) | [Tech Talk Notes](ttn) | [Test prep plans](tpp) | [Data struture work](dsw) |
+| [Home](..) | [Tech Talk Notes](../ttn) | [Test prep plans](../tpp) | [Data struture work](.) |
 
 [Source code](https://github.com/TKperson/TKperson.github.io/tree/main/apcsa/dsw/src)
 
