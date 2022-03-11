@@ -1,5 +1,5 @@
-| [Tech Talk Notes](apcsa/ttn) | [Test prep plans](apcsa/tpp) | [Data struture work](apcsa/dsw) |
-| ----------------| --------------- | ------------------ |
+| [Home](..) | [Tech Talk Notes](apcsa/ttn) | [Test prep plans](apcsa/tpp) | [Data struture work](apcsa/dsw) |
+
 # Tech talk notes
 ### Week 0
 * Data structures
