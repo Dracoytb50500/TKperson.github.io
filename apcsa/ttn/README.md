@@ -1,4 +1,4 @@
-| [Home](..) | [Tech Talk Notes](.) | [Test prep plans](../tpp) | [Data struture work](../dsw) |
+| [Home](..) | [Tech Talk Notes](.) | [Test prep plans](../tpp) | [Data struture work](../dsw) | [Review tickets](../rtk)
 
 # Tech talk notes
 ### Week 0

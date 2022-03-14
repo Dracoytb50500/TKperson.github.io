@@ -1,5 +1,4 @@
-| [Home](..) | [Tech Talk Notes](../ttn) | [Test prep plans](.) | [Data struture work](../dsw) |
-
+| [Home](..) | [Tech Talk Notes](../ttn) | [Test prep plans](.) | [Data struture work](../dsw) | [Review tickets](../rtk)
 
 # Test prep plans
 1. Study :D
