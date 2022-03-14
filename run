@@ -1,0 +1,10 @@
+#!/bin/sh
+
+BINPREFIX="bin/apcsa/dsw/src"
+SRCPREFIX="apcsa/dsw/src"
+
+mkdir -p "$BINPREFIX"
+
+javac -d "$BINPREFIX" "$SRCPREFIX/*.java"
+cd bin
+java "$SRCPREFIX/Main"
