@@ -2,5 +2,11 @@
 
 # Test prep plans
 1. Study :D
-2. Look over the old materials and projects
-3. Use collegeboard
+2. Go over polymorphism
+3. Go over this:
+```rust
+// !(a<b)&&(c>d)
+assert_eq!(!(a<b), (a>=b));
+```
+4. Go over how inheritance work
+
