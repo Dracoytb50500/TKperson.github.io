@@ -27,6 +27,163 @@
     * Adds to the top of the stack
     * Removes from the bottom of the stack
 
+```java
+class LinkedList<T> {
+    private Node<T> head;
+    private Node<T> tail;
+    private int size;
+
+    public LinkedList() {
+        this.head = null;
+        this.tail = null;
+        this.size = 0;
+    }
+
+    public void add(T data) {
+        Node<T> node = new Node<T>(data);
+        if (this.head == null) {
+            this.head = node;
+            this.tail = node;
+        } else {
+            this.tail.setNext(node);
+            this.tail = node;
+        }
+        this.size++;
+    }
+
+    public void add(int index, T data) {
+        if (index < 0 || index > this.size) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + this.size);
+        }
+        if (index == 0) {
+            this.addFirst(data);
+        } else if (index == this.size) {
+            this.addLast(data);
+        } else {
+            Node<T> node = new Node<T>(data);
+            Node<T> current = this.head;
+            for (int i = 0; i < index - 1; i++) {
+                current = current.getNext();
+            }
+            node.setNext(current.getNext());
+            current.setNext(node);
+            this.size++;
+        }
+    }
+
+    public void addFirst(T data) {
+        Node<T> node = new Node<T>(data);
+        node.setNext(this.head);
+        this.head = node;
+        if (this.size == 0) {
+            this.tail = node;
+        }
+        this.size++;
+    }
+
+    public void addLast(T data) {
+        Node<T> node = new Node<T>(data);
+        if (this.size == 0) {
+            this.head = node;
+            this.tail = node;
+        } else {
+            this.tail.setNext(node);
+            this.tail = node;
+        }
+        this.size++;
+    }
+
+    public T get(int index) {
+        if (index < 0 || index >= this.size) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + this.size);
+        }
+        Node<T> current = this.head;
+        for (int i = 0; i < index; i++) {
+            current = current.getNext();
+        }
+        return current.getData();
+    }
+
+    public T getFirst() {
+        if (this.size == 0) {
+            throw new NoSuchElementException();
+        }
+        return this.head.getData();
+    }
+
+    public T getLast() {
+        if (this.size == 0) {
+            throw new NoSuchElementException();
+        }
+        return this.tail.getData();
+    }
+
+    public T remove(int index) {
+        if (index < 0 || index >= this.size) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + this.size);
+        }
+        T data = null;
+        if (index == 0) {
+            data = this.removeFirst();
+        } else if (index == this.size - 1) {
+            data = this.removeLast();
+        } else {
+            Node<T> current = this.head;
+            for (int i = 0; i < index - 1; i++) {
+                current = current.getNext();
+            }
+            data = current.getNext().getData();
+            current.setNext(current.getNext().getNext());
+            this.size--;
+        }
+        return data;
+    }
+
+    public T removeFirst() {
+        if (this.size == 0) {
+            throw new NoSuchElementException();
+        }
+        T data = this.head.getData();
+        this.head = this.head.getNext();
+        this.size--;
+        if (this.size == 0) {
+            this.tail = null;
+        }
+        return data;
+    }
+
+    public T removeLast() {
+        if (this.size == 0) {
+            throw new NoSuchElementException();
+        }
+        T data = this.tail.getData();
+        if (this.size == 1) {
+            this.head = null;
+            this.tail = null;
+        } else {
+            Node<T> current = this.head;
+            for (int i = 0; i < this.size - 2; i++) {
+                current = current.getNext();
+            }
+            this.tail = current;
+            this.tail.setNext(null);
+        }
+        this.size--;
+        return data;
+    }
+
+    public int size() {
+        return this.size;
+    }
+
+    public void clear() {
+        this.head = null;
+        this.tail = null;
+        this.size = 0;
+    }
+}
+```
+
 * implements
   * use for defining existing methods (very similar to abstract)
 
@@ -34,6 +191,15 @@
   * <T> T type generic
   * Used for "any type"
   * For reducing code duplications
+
+Example:
+```java
+class test<T> {
+	LinkedList<T> ll = new LinkedList<T>;
+	
+}
+```
+}
 
 
 
