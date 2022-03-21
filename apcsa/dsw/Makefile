@@ -1,5 +1,6 @@
+run: build execute
 
-run: build
+execute: 
 	java -cp ./bin com/Main
 
 build:
