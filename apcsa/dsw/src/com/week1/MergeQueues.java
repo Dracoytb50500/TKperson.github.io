@@ -1,5 +1,7 @@
+package com.week1;
+
 import java.util.*;
-public class MergeQueue {
+public class MergeQueues {
 
 	public static Queue<Integer> merge(Queue<Integer> firstQueue,
 					      	 	 	   Queue<Integer> secondQueue) {

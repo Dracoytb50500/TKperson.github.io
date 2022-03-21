@@ -1,3 +1,5 @@
+package com.week0;
+
 public class Printy {
 	public static void main(String[] args) {
 		System.out.println("executing printy");

@@ -1,6 +1,6 @@
-import java.util.*;
+package com.week1;
 
-// create a Stack class
+import java.util.*;
 
 public class Stack<T> {
     LinkedList<T> list;
@@ -66,7 +66,7 @@ public class Stack<T> {
         return s;
     }
 
-    public static String stackToString(Stack q) {
+    public static String stackToString(Stack<Integer> q) {
         Iterator<Integer> it = q.iterator();
         String s = new String();
         while(it.hasNext()) {
