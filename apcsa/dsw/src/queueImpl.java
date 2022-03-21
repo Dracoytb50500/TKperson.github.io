@@ -18,7 +18,7 @@ public class queueImpl<T> {
 		temp = temp.substring(0, temp.length() - 1).substring(1);
 
 		if(temp.isEmpty()) {
-			temp = "null"
+			temp = "null";
 		}
 
 		System.out.println("Words count: " 
