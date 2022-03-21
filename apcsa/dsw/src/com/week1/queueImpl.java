@@ -6,16 +6,21 @@ public class queueImpl<T> {
 	Queue<T> queue;
 	
 	public queueImpl() {
+		// init
 		queue = new PriorityQueue<T> (); 
 	}
 
 	public void add(T item) {
+		// print the items that are added with fancy format
+		
 		System.out.println("Enqueued data: " + item);
 		this.queue.add(item);
 		printWordCount();
 	}
 
 	private void printWordCount() {
+		// print item count with fancy format
+		
 		String temp = this.queue.toString();
 		temp = temp.substring(0, temp.length() - 1).substring(1);
 
@@ -31,6 +36,7 @@ public class queueImpl<T> {
 	}
 
 	public void remove() {
+		// print the removed from queue
 		System.out.println("Dequeued data: " + this.queue.remove());
 		printWordCount();
 	}
@@ -40,6 +46,7 @@ public class queueImpl<T> {
 	}
 
 	public static void main(String[] args) {
+		// tester
 		queueImpl<String> queueTest = new queueImpl<String>();
 		queueTest.add("seven");
 		queueTest.add("slimy");

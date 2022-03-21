@@ -2,6 +2,7 @@ package com.week1;
 
 import java.util.*;
 
+// this is an implementation of Stack with generic types using linkedlist
 public class Stack<T> {
     LinkedList<T> list;
     public Stack() {
@@ -20,6 +21,7 @@ public class Stack<T> {
         return list.getFirst();
     }
 
+    // iterator helps with looping through the queue without copy or destroy the queue
     public Iterator<T> iterator() {
         return list.iterator();
     }
@@ -37,6 +39,8 @@ public class Stack<T> {
     }
 
     public String toStringFormat() {
+	// print with fancy format for Stack
+	
         Iterator<T> it = list.iterator();
         String s = "(Top) ";
         while(it.hasNext()) {
@@ -47,6 +51,8 @@ public class Stack<T> {
     }
 
     public String toString() {
+	// print Stack with spaces between items
+	
         Iterator<T> it = list.iterator();
         String s = new String();
         while(it.hasNext()) {
@@ -67,6 +73,7 @@ public class Stack<T> {
     }
 
     public static String stackToString(Stack<Integer> q) {
+	// print stack items with spaces
         Iterator<Integer> it = q.iterator();
         String s = new String();
         while(it.hasNext()) {
@@ -76,6 +83,7 @@ public class Stack<T> {
     }
 
     public static String formatQueue(Queue<Integer> q) {
+	// fancy print for queue
         Iterator<Integer> it = q.iterator();
         String s = "(Head) ";
         while(it.hasNext()) {
@@ -85,6 +93,7 @@ public class Stack<T> {
     }
 
     public static void main(String[] args) {
+	// tester
         Queue<Integer> q = new PriorityQueue<Integer>();
         q.add(1);
         q.add(2);

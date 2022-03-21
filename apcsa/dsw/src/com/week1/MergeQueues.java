@@ -11,6 +11,7 @@ public class MergeQueues {
 		Integer a = null, 
 				b = null;
 
+		// sort queues and merge 2 queues into 1 queue with accending order
 		while(!firstQueue.isEmpty() || !secondQueue.isEmpty()) {
 			if(a == null) a = firstQueue.remove();
 
@@ -38,6 +39,7 @@ public class MergeQueues {
 	}
 
 	public static void printQueue(Queue<Integer> queue) {
+		// print queue with fancy format
 		Iterator<Integer> it = queue.iterator();
 		while(it.hasNext()) {
 			System.out.print(it.next() + " -> ");
@@ -46,6 +48,7 @@ public class MergeQueues {
 	}
 
 	public static void main(String[] args) {
+		// tester
 		Queue<Integer> queue1 = new PriorityQueue<Integer>();
 		queue1.add(1);
 		queue1.add(4);
