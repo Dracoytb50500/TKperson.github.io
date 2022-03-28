@@ -7,3 +7,4 @@
 ./src/com/week1/queueImpl.java
 ./src/com/week1/Stack.java
 ./src/com/week1/TestStack.java
+./src/com/week2/Calculator.java

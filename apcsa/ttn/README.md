@@ -201,5 +201,19 @@ class test<T> {
 ```
 }
 
-
-
+### Week 3 
+* Calculator
+  * push numbers 
+* Symbols for operators
+  * *
+  * /
+  * %
+  * +
+  * -
+* Symbols for changing order of operation
+  * Separators
+    * (
+    * )
+    * Space
+    * Operators
+* Shunting yard algorithm

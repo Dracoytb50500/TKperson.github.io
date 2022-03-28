@@ -3,3 +3,6 @@
 
 # vim
 *.swp
+
+/apcsa/dsw/.git
+/apcsa/dsw/.gitignore
