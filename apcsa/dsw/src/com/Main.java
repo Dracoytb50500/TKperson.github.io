@@ -10,6 +10,7 @@ import java.lang.ClassCastException;
 
 import com.week0.*;
 import com.week1.*;
+import com.week2.*;
 
 public class Main {
     static public void main(String[] args) throws IOException  {  
@@ -40,6 +41,8 @@ public class Main {
         OPERATIONS.put("3", new operation("queueImpl", () -> queueImpl.main(null)));
         OPERATIONS.put("4", new operation("MergeQueues", () -> MergeQueues.main(null)));
         OPERATIONS.put("5", new operation("Stack", () -> Stack.main(null))); 
+        OPERATIONS.put("6", new operation("Calc", () -> Calculator.main(null))); 
+        OPERATIONS.put("7", new operation("Calc with user input", () -> CalcWithInput.main(null))); 
 
         for(String key : OPERATIONS.keySet()) {
             System.out.println(key + " - " + OPERATIONS.get(key).getName());

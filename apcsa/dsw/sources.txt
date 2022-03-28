@@ -1,10 +1,11 @@
-./src/com/Main.java
 ./src/com/week0/Hello.java
+./src/com/week0/Printy.java
 ./src/com/week0/IntByReference.java
 ./src/com/week0/Matrix.java
-./src/com/week0/Printy.java
-./src/com/week1/MergeQueues.java
+./src/com/Main.java
 ./src/com/week1/queueImpl.java
-./src/com/week1/Stack.java
+./src/com/week1/MergeQueues.java
 ./src/com/week1/TestStack.java
+./src/com/week1/Stack.java
 ./src/com/week2/Calculator.java
+./src/com/week2/CalcWithInput.java
