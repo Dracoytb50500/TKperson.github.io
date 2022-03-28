@@ -217,3 +217,8 @@ class test<T> {
     * Space
     * Operators
 * Shunting yard algorithm
+```java
+public void tokenize() { /* ... */ }
+public void reverseToken() { /* ... */ }
+public void rnpToResult() { /* ... */ }
+```
