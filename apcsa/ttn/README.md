@@ -222,3 +222,69 @@ public void tokenize() { /* ... */ }
 public void reverseToken() { /* ... */ }
 public void rnpToResult() { /* ... */ }
 ```
+
+* Calculator code highlights
+```java
+public Double calculate(Double operand1, Double operand2, String operator) {
+	Double result = 0.0;
+	switch (operator) {
+		case "+":
+			result = operand2 + operand1;
+			break;
+		case "-":
+			result = operand2 - operand1;
+			break;
+		case "*":
+			result = operand2 * operand1;
+			break;
+		case "/":
+			result = operand2 / operand1;
+			break;
+		case "%":
+			result = operand2 % operand1;
+			break;
+		case "^":
+			result = Math.pow(operand2, operand1);
+	}
+	return result;
+}
+
+
+private void rpnToResult() {
+	// Stack used to hold calculation while process RPN
+	Stack<Double> calculation = new Stack<Double>();
+
+	// for loop to process RPN
+	for(int i = 0; i < this.reverse_polish.size(); i++) {
+		String currentToken = this.reverse_polish.get(i);
+		// if token is an operator
+		if(isOperator(currentToken)) {
+			// get operator
+			Double result;
+
+			// get operands
+			Double operand1 = calculation.pop();
+			Double operand2 = calculation.pop();
+			// calculate result
+			result = this.calculate(operand1, operand2, currentToken);
+
+			// push result to stack
+			calculation.push(result);
+		} else if (isFunction(currentToken)) {
+
+			result = this.eval(calculation.pop(), currentToken);
+			// push result to stack
+			calculation.push(result);
+
+		} else { // if a number
+			// push number to stack
+			calculation.push(Double.parseDouble(currentToken));
+		}
+		// debug
+		// System.out.println("reverse plish: " + this.reverse_polish);
+		System.out.println("calc: " + calculation);
+	}
+
+	this.result = calculation.pop();
+}
+```

@@ -308,6 +308,8 @@ public class Calculator {
 
 	    Calculator test3 = new Calculator("a = 1; b = a - 3 + 5; sqrt(a * 3 + 2 * b)");
 	    System.out.println("test3\n" + test3);
+
 	    // TODO: fix variable name replacing letters in functions
+		
     }
 }
