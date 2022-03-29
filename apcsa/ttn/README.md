@@ -224,6 +224,7 @@ public void rnpToResult() { /* ... */ }
 ```
 
 * Calculator code highlights
+
 ```java
 public Double calculate(Double operand1, Double operand2, String operator) {
 	Double result = 0.0;
@@ -248,7 +249,6 @@ public Double calculate(Double operand1, Double operand2, String operator) {
 	}
 	return result;
 }
-
 
 private void rpnToResult() {
 	// Stack used to hold calculation while process RPN
