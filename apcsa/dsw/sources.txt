@@ -9,3 +9,7 @@
 ./src/com/week1/TestStack.java
 ./src/com/week2/Calculator.java
 ./src/com/week2/CalcWithInput.java
+./src/com/week3/Sorts.java
+./src/com/week3/Week3LinkedList.java
+./src/com/week3/Week3Queue.java
+./src/com/week3/Week3Stack.java

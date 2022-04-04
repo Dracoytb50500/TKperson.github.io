@@ -11,6 +11,7 @@ import java.lang.ClassCastException;
 import com.week0.*;
 import com.week1.*;
 import com.week2.*;
+import com.week3.*;
 
 public class Main {
     static public void main(String[] args) throws IOException  {  
@@ -36,13 +37,14 @@ public class Main {
         banner();
         Map<String, operation> OPERATIONS = new HashMap<>();
         OPERATIONS.put("q", new operation("Quit", null));
-        OPERATIONS.put("1", new operation("Matrix", () -> Matrix.main(null)));
-        OPERATIONS.put("2", new operation("IntByReference", () -> IntByReference.main(null)));
-        OPERATIONS.put("3", new operation("queueImpl", () -> queueImpl.main(null)));
-        OPERATIONS.put("4", new operation("MergeQueues", () -> MergeQueues.main(null)));
-        OPERATIONS.put("5", new operation("Stack", () -> Stack.main(null))); 
-        OPERATIONS.put("6", new operation("Calc", () -> Calculator.main(null))); 
-        OPERATIONS.put("7", new operation("Calc with user input", () -> CalcWithInput.main(null))); 
+        OPERATIONS.put("1", new operation("Week 0 - Matrix", () -> Matrix.main(null)));
+        OPERATIONS.put("2", new operation("Week 0 - IntByReference", () -> IntByReference.main(null)));
+        OPERATIONS.put("3", new operation("Week 1 - queueImpl", () -> queueImpl.main(null)));
+        OPERATIONS.put("4", new operation("Week 1 - MergeQueues", () -> MergeQueues.main(null)));
+        OPERATIONS.put("5", new operation("Week 2 - Stack", () -> Stack.main(null))); 
+        OPERATIONS.put("6", new operation("Week 2 - Calc", () -> Calculator.main(null))); 
+        OPERATIONS.put("7", new operation("Week 2 - Calc with user input", () -> CalcWithInput.main(null))); 
+        OPERATIONS.put("8", new operation("Week 3 - Sort", () -> Sorts.main(null))); 
 
         for(String key : OPERATIONS.keySet()) {
             System.out.println(key + " - " + OPERATIONS.get(key).getName());
