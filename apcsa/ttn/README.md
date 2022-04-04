@@ -288,3 +288,16 @@ private void rpnToResult() {
 	this.result = calculation.pop();
 }
 ```
+
+# Week 3
+* Bubble sort
+  * Worst time complexity O(N^2)
+
+* Insertion sort
+  * Worst time complexity O(N^2)
+
+* Selection sort
+  * Worst time complexity O(N^2)
+
+* Merge sort
+  * Worst time complexity O(Nlog(N))
