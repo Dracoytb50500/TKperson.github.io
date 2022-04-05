@@ -297,7 +297,9 @@ private void rpnToResult() {
 * Insertion sort
   * Worst time complexity O(N^2)
   * Algorithm
-    * Find the 
+    * Start a for loop pointing at a value
+    * Check if there is a number in front of the current value that is smaller than the current value
+    * If there's a number like that then insert the current value behind the smaller number. If not, insert the value at the very front of the array.
 
 * Selection sort
   * Worst time complexity O(N^2)
@@ -308,3 +310,5 @@ private void rpnToResult() {
 
 * Merge sort
   * Worst time complexity O(Nlog(N))
+  * Use [this to explain](https://www.geeksforgeeks.org/merge-sort/)
+  * It has images I need
