@@ -292,12 +292,19 @@ private void rpnToResult() {
 # Week 3
 * Bubble sort
   * Worst time complexity O(N^2)
+  * Have 2 pointers, and swap the numbers if the value under the pointers have a difference less than 0
 
 * Insertion sort
   * Worst time complexity O(N^2)
+  * Algorithm
+    * Find the 
 
 * Selection sort
   * Worst time complexity O(N^2)
+  * Algorithm
+    * Find the minimun value of the entire group
+    * Put the value infront of the group if the value has been found
+    * Shrink the group size
 
 * Merge sort
   * Worst time complexity O(Nlog(N))

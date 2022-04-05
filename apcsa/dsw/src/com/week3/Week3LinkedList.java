@@ -184,12 +184,15 @@ public class Week3LinkedList<T> {
         }
 
         Node<T> temp1 = head;
-        Node<T> temp2 = head;
 
-        for (int i = 0; i < index1; i++) {
+	int iF = Math.min(index1, index2);
+        for (int i = 0; i < iF; i++) {
             temp1 = temp1.next;
         }
-        for (int i = 0; i < index2; i++) {
+
+        Node<T> temp2 = temp1;
+	int jF = Math.max(index1, index2);
+        for (int i = iF; i < jF; i++) {
             temp2 = temp2.next;
         }
         T temp = temp1.data;

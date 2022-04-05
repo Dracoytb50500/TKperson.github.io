@@ -14,12 +14,12 @@ public class Sorts<T> {
 
 	// bubble sort that takes a LinkedList and a function that compares 2 arguments and returns a boolean 
 	public void _bubbleSort(Week3LinkedList<T> list, BiFunction<T, T, Boolean> compare) {
-		for (int i = 0; i < list.size(); i++) {
-			for (int j = 0; j < list.size(); j++) {
+		for (int i = 0; i < list.size() - 1; i++) {
+			for (int j = 0; j < list.size() - i - 1; j++) {
 				comparisions++;
-				if (compare.apply(list.get(j), list.get(i))) {
+				if (compare.apply(list.get(j), list.get(j+1))) {
 					swaps++;
-					list.swap(i, j);
+					list.swap(j+1, j);
 				}
 			}
 		}
