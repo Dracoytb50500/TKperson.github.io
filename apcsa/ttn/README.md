@@ -312,3 +312,12 @@ private void rpnToResult() {
   * Worst time complexity O(Nlog(N))
   * Use [this to explain](https://www.geeksforgeeks.org/merge-sort/)
   * It has images I need
+
+* Statistic for arrayList<Integer> over a 5000 elements simple and tested 12 times for each algorithm.
+
+| Algojrithm  | Total time | Average Time | Swaps | Comparisions | 
+| :--------- | --------- | --------- | --------- | ----: |
+| Bubble | 1.1064956 seconds | 0.0922 seconds | 40633033 | 81233750 |
+| Selecltion | 0.1201367 seconds | 0.01001 seconds  | 4999 | 4999 |
+| Insertion | 0.0576336 seconds | 0.0048028 seconds | 6272806 | 4999 |
+| Merge | 0.2380276 | 0.0198 seconds | 325064 | 662722 |
