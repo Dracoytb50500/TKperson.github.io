@@ -97,12 +97,12 @@ public class Week3Stack<T> extends Week3LinkedList<T> {
 
     public static void main(String[] args) {
 	// tester
-        Week3Queue<Integer> q = new Week3Queue<Integer>();
-        q.add(1);
-        q.add(2);
-        q.add(3);
-        System.out.println(formatQueue(q));
-        System.out.println(queueToString(q));
+	// Week3Queue<Integer> q = new Week3Queue<Integer>();
+        // q.add(1);
+        // q.add(2);
+        // q.add(3);
+        // System.out.println(formatQueue(q));
+        // System.out.println(queueToString(q));
 
         Week3Stack<Integer> s = new Week3Stack<Integer>();
         s.push(1);

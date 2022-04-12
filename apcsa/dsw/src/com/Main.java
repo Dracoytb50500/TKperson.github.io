@@ -41,7 +41,7 @@ public class Main {
         OPERATIONS.put("2", new operation("Week 0 - IntByReference", () -> IntByReference.main(null)));
         OPERATIONS.put("3", new operation("Week 1 - queueImpl", () -> queueImpl.main(null)));
         OPERATIONS.put("4", new operation("Week 1 - MergeQueues", () -> MergeQueues.main(null)));
-        OPERATIONS.put("5", new operation("Week 2 - Stack", () -> Stack.main(null))); 
+        OPERATIONS.put("5", new operation("Week 2 - Stack", () -> Week3Stack.main(null))); 
         OPERATIONS.put("6", new operation("Week 2 - Calc", () -> Calculator.main(null))); 
         OPERATIONS.put("7", new operation("Week 2 - Calc with user input", () -> CalcWithInput.main(null))); 
         OPERATIONS.put("8", new operation("Week 3 - Sort", () -> Sorts.main(null))); 
