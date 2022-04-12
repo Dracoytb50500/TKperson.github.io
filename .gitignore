@@ -4,5 +4,6 @@
 # vim
 *.swp
 
+# git servers
 /apcsa/dsw/.git
 /apcsa/dsw/.gitignore
