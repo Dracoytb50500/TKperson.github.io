@@ -10,3 +10,13 @@ assert_eq!(!(a<b), (a>=b));
 ```
 4. Go over how inheritance work
 
+5. Getter and setters
+```java
+public class lol {
+	private String fff = "asdf:";
+
+	public int getfFF() {
+		return fff;
+	}
+}
+```
