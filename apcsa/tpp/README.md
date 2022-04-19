@@ -3,7 +3,7 @@
 # Test prep plans
 1. Study :D
 2. Go over polymorphism
-3. Go over this:
+3. Go over this: de morgan's law
 ```rust
 // !(a<b)&&(c>d)
 assert_eq!(!(a<b), (a>=b));
